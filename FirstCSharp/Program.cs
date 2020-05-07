@@ -8,8 +8,9 @@ namespace FirstCSharp
         {
             Console.WriteLine("Hello My World!");
             int i=0;
+            string name="Dojo";
             while(i<10){
-                Console.WriteLine(i);
+                Console.WriteLine($"{i} Hello {name}" );
                 i++;
             }
         }
