@@ -1,0 +1,34 @@
+@using Hello.Models
+@model List<Ninja>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <thead> 
+            <tr>
+                <td>Name</td>
+                <td>Pass</td>
+                <td>Track</td>
+                <td>IsDojo</td>
+            </tr>
+        </thead>
+      @foreach (var ninja in Model)
+      {
+           <tr>
+            <td>@ninja.Name</td>
+            <td>@ninja.Password</td>
+            <td>@ninja.Track</td>
+            <td>@ninja.IsDojo</td>
+            </tr> 
+        
+      }
+      
+       
+    </table>
+</body>
+</html>

@@ -22,3 +22,4 @@ C:\Reena Dangi\DotNet\FirstProj\obj\MCD\Debug\netcoreapp2.2\FirstProj.Views.pdb
 C:\Reena Dangi\DotNet\FirstProj\obj\MCD\Debug\netcoreapp2.2\FirstProj.csproj.CopyComplete
 C:\Reena Dangi\DotNet\FirstProj\obj\MCD\Debug\netcoreapp2.2\Razor\Views\Hello\Index.g.cshtml.cs
 C:\Reena Dangi\DotNet\FirstProj\obj\MCD\Debug\netcoreapp2.2\Razor\Views\Hello\Profile.g.cshtml.cs
+C:\Reena Dangi\DotNet\FirstProj\obj\MCD\Debug\netcoreapp2.2\Razor\Views\Hello\AllNinja.g.cshtml.cs

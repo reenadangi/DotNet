@@ -1,3 +1,5 @@
+ @using Hello.Models
+ @model Ninja
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +8,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Welcome @ViewBag.Ninja.Name @ViewBag.Ninja.Password</h1>
+   
+    <h1>Welcome @Model.Name @Model.Password @Model.Track  @Model.IsDojo</h1>
 
     @* @foreach(var language in @ViewBag.Languages)
     {

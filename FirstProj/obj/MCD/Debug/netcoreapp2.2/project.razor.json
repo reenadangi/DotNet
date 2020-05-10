@@ -2966,6 +2966,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Reena Dangi\\DotNet\\FirstProj\\Views\\Hello\\AllNinja.cshtml",
+      "TargetPath": "Views\\Hello\\AllNinja.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Reena Dangi\\DotNet\\FirstProj\\Views\\Hello\\Index.cshtml",
       "TargetPath": "Views\\Hello\\Index.cshtml",
       "FileKind": "mvc"

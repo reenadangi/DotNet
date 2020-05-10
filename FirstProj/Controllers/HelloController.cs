@@ -10,18 +10,30 @@ public IActionResult Index(){
     // return "Hello Bello";
     return View();
 }
+[HttpGet("allNinja")]
+public IActionResult AllNinja(){
+    List<Ninja> ninjas=new List<Ninja>();
+    ninjas.Add(new Ninja("Reena","dangi","Java","On"));
+    ninjas.Add(new Ninja("Re","dangi","Python","On"));
+    ninjas.Add(new Ninja("R","dangi","C#","On"));
+    ninjas.Add(new Ninja("na","dangi","Javascript","On"));
+    return View("AllNinja",ninjas);
 
+}
 [HttpPost("profile")]
 // Mostly after form submition
-public IActionResult Profile(string Login,string Password,string track,string isDojo){
-    Console.WriteLine(Login+Password+track+isDojo);
-    Ninja Ninja=new Ninja(){
-        Name=Login,
-        Password=Password
-    };
-    ViewBag.Ninja=Ninja;
+public IActionResult Profile(Ninja newNinja){
+    // Console.WriteLine(Login+Password+Track+IsDojo);
+    // Ninja Ninja=new Ninja(){
+    //     Name=Login,
+    //     Password=Password,
+    //     Track=Track,
+    //     IsDojo
+    // };
+    Console.WriteLine(newNinja.Name+newNinja.Password+newNinja.IsDojo+newNinja.Track);
+    ViewBag.Ninja=newNinja;
     
-    return View("Profile");
+    return View("Profile",newNinja);
 }
 [Route("profile/{name}")]
 [HttpGet]
