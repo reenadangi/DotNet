@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @* access css file from wwwroot/css *@
+    <link rel="stylesheet" href="~/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    @{
+        string[] names={"Rina","lee","cass"};
+        string now=DateTime.Now.ToString("D");
+    }
+    <h4>It is @now</h4>
+    <ul>
+     @foreach(string name in names){
+        string lowerName=name.ToLower();
+        if(lowerName[0]=='r'){
+        <li class="r">
+            <a href="/profile/@lowerName">@name</a>
+        </li>   
+        }
+        else{
+        <li>
+            <a href="/profile/@lowerName">@name</a>
+        </li> 
+        }     
+     }
+    
+    
+    </li>
+    </ul>
+    <a href="profile">Profile</a>
+    
+</body>
+</html>
