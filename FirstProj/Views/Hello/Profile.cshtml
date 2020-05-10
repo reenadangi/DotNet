@@ -6,7 +6,15 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Welcome @ViewBag.Ninja.Name @ViewBag.Ninja.Password</h1>
+
+    @* @foreach(var language in @ViewBag.Languages)
+    {
+        <p>@language</p>
+
+        
+    } *@
+
     This is profile page! Lets make it work.
-    @Context.Request.Query["name"]
 </body>
 </html>
